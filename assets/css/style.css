@@ -131,6 +131,223 @@
   margin-top: 20px;
 }
 
+/* form common style */
+.form__default-text {
+  font-size: 12px;
+  color: #545658;
+}
+
+.input-init {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: none;
+  outline: none;
+  resize: none;
+}
+
+.input-default {
+  background-color: #fbfbfb;
+  box-sizing: border-box;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+  color: #545658;
+  font-size: 13px;
+  height: 36px;
+  line-height: 2;
+  margin-top: 5px;
+  padding: 5px;
+  width: 100%;
+}
+
+.input-default:focus {
+  background-color: #fff;
+  border: 1px solid rgba(59, 133, 133, 0.4);
+  box-shadow: 0 0 0 2px rgb(1 191 189 / 10%);
+}
+
+.alert {
+  color: red;
+}
+
+.theme-box {
+  margin-top: 20px;
+}
+
+.theme-box:first {
+  margin-top: 0;
+}
+
+/* name */
+.name {
+  display: flex;
+}
+
+.name__textbox {
+  display: inline-block;
+  margin-left: 18px;
+}
+
+.name__textbox:first-child {
+  margin-left: 0;
+}
+
+.family-name,
+.first-name {
+  cursor: text;
+  display: block;
+}
+
+
+/* 性別 */
+.sex__form {
+  margin-top: 5px;
+  color:#545658;
+  display: flex;
+  font-size: 16px;
+}
+
+.sex__form__radio {
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+.sex__form__radio:first-child {
+  margin-left: 0;
+}
+
+.sex__form__radio__button {
+  display: none;
+}
+
+.sex__form__radio span {
+  display: inline-block;
+  position: relative;
+  padding: 3px 3px 3px 20px;
+}
+
+.sex__form__radio span::before {
+  background-color: #fbfbfb;
+  border: 1px solid #d9d9d9;
+  border-radius: 50%;
+  content: "";
+  height: 14px;
+  left: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 14px;
+}
+
+.sex__form__radio__button:checked + span::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 50%;
+  height: 8px;
+  width: 8px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background-color: #01bfbd;
+}
+
+/* 出身 */
+.birthplace__select {
+  position :relative;
+  margin-top: 8px;
+}
+
+.birthplace__select > select {
+  margin-top: 0;
+}
+
+.birthplace__select::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  top: 45%;
+  transform: rotate(45deg);
+  height: 5px;
+  width: 5px;
+  border-right: 2px solid #d9d9d9;
+  border-bottom: 2px solid #d9d9d9;
+}
+
+/* 希望コース */
+.course__checkbox-area {
+  margin-top: 10px;
+  color: #545658;
+  font-size: 16px;
+}
+
+.course__checkbox-area:nth-of-type(1) {
+  margin-top: 5px;
+}
+
+.course__checkbox-area input {
+  display: none;
+}
+
+.course__checkbox-area__text {
+  position: relative;
+  padding-left: 25px;
+}
+
+.course__checkbox-area__text::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 15px;
+  width: 15px;
+  margin-top: -8px;
+  border: 1px solid #d9d9d9;
+}
+
+.course__checkbox-area input:checked + .course__checkbox-area__text::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 50%;
+  transform: rotate(45deg);
+  height: 16px;
+  width: 8px;
+  margin-top: -12px;
+  border-right: 3px solid #01bfbd;
+  border-bottom: 3px solid #01bfbd;
+}
+
+/* 備考 */
+.remarks .input-default{
+  height: 100px;
+}
+
+.remarks__textarea:focus {
+  background-color: #fff;
+  border: 1px solid rgba(59, 133, 133, 0.4);
+  box-shadow: 0 0 0 2px rgb(1 191 189 / 10%);
+}
+
+/* アカウント作成 */
+.account-create {
+  background-color: #01bfbd;
+  border: 1px solid #01bfbd;
+  color: #fff;
+  padding: 13px;
+}
+
+.account-create:hover {
+  background-color: #01a6a4;
+}
+
+.account-create:active {
+  background-color: #fff;
+  border-color: #d9d9d9;
+  color: #01a6a4;
+}
+
 /*--- 利用規約 ---*/
 .agreement {
   font-size: 12px;
